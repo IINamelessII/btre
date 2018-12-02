@@ -1,10 +1,13 @@
 from django.shortcuts import redirect, render
+from django.contrib import messages
 
 
 def register(request):
     if request.method == 'POST':
-        pass
-    return render(request, 'accounts/register.html')
+        messages.error(request, 'Testing error message')
+        return redirect('register')
+    else:
+        return render(request, 'accounts/register.html')
 
 
 def login(request):

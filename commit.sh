@@ -1,5 +1,6 @@
 #!/bin/bash
-COMMIT_MESSAGE=$1
+COMMIT_MESSAGE="\"$1\""
+
 git add .
-git commit -m \"$COMMIT_MESSAGE=$1\"
+git commit -m "Add messages(alerts) to registration and login"
 git push
