@@ -2,6 +2,8 @@ from django.shortcuts import redirect, render
 
 
 def register(request):
+    if request.method == 'POST':
+        pass
     return render(request, 'accounts/register.html')
 
 
