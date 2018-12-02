@@ -14,7 +14,7 @@
     <!-- Lightbox -->
     <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
     
-    <title>BT Real Estate</title>
+    <title>{% block title %}{% endblock title %} | BT Real Estate</title>
 </head>
 <body>
     {% include "partials/_topbar.html" %}

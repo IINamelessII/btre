@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
+
 {% load humanize %}
+
+{% block title %}
+    {{ listing.title }} {{ listing.city }} {{ listing.state }}, {{ listing.zipcode }}
+{% endblock %}
 
 {% block content %}
     <section id="showcase-inner" class="py-5 text-white">
