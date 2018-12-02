@@ -2,5 +2,6 @@
 COMMIT_MESSAGE="\"$1\""
 
 git add .
-git commit -m "Add logout, dashboard and page's title"
+git reset -- btre/settings.py
+git commit -m "Add inquiry contacts"
 git push
